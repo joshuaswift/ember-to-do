@@ -1,5 +1,18 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-{{welcome-page}}
-{{!-- Feel free to remove this! --}}
+<div class="flex-container">
+    <h1>To-do List</h1>
 
+    <form>
+        <div class="add-task">
+            Task: {{input value=description}}
+            <button class="add-btn" type="submit" {{action "addTask" description}}><i class="fas fa-plus-square fa-2x"></i></button>
+        </div>
+    </form>
+
+    <ul class="task-container">
+        {{#each model as |task|}}
+        <li class="task">
+            <p>{{task.description}}</p>
+            <button class="remove-btn" type="submit" {{action "removeTask" task}}><i class="fas fa-check-square fa-2x"></i></button>
+        </li> {{/each}} </ul>
+</div>
 {{outlet}}
