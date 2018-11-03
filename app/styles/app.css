@@ -40,10 +40,11 @@ button {
 }
 
 .task {
-  border: 2px #ef767a solid;
+  border: 4px #ef767a solid;
   margin-bottom: 25px;
   width: 200px;
   text-align: center;
+  box-shadow: 0 1px 7px -1px rgba(0, 0, 0, 0.54);
 }
 
 .add-task {

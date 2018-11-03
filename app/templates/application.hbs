@@ -13,6 +13,8 @@
         <li class="task">
             <p>{{task.description}}</p>
             <button class="remove-btn" type="submit" {{action "removeTask" task}}><i class="fas fa-check-square fa-2x"></i></button>
-        </li> {{/each}} </ul>
+        </li>
+        {{/each}}
+    </ul>
 </div>
 {{outlet}}
