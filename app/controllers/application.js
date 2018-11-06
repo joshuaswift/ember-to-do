@@ -8,8 +8,6 @@ export default Controller.extend({
           description
         })
         .save();
-
-      document.getElementByClass("form-group").reset();
     },
     removeTask(task) {
       task.deleteRecord();

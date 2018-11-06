@@ -1,14 +1,11 @@
 export default [
   {
-    description: "Do washing up",
-    isComplete: false
+    description: "Do washing up"
   },
   {
-    description: "Feed cat",
-    isComplete: false
+    description: "Feed cat"
   },
   {
-    description: "Empty bins",
-    isComplete: false
+    description: "Empty bins"
   }
 ];
